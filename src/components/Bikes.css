@@ -1,0 +1,30 @@
+.bike-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 10px 8px rgba(141, 16, 213, 0.1);
+    margin: 16px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.bike-card:hover {
+    transform: scale(1.05);
+}
+
+.bike-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.bike-title {
+    font-size:1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.bike-details {
+    font-size: 1rem;
+    color: #666;
+}

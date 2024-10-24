@@ -1,6 +1,39 @@
 .imgLand{
     padding-right: 90px;
+    width: auto; /* Keeps the width auto to maintain aspect ratio */
+  height: 500px; /* You can increase this value as per your requirement */
+  object-fit: cover; /* Ensures the image covers the entire area */
 }
 .landing{
     padding-left: 90px;
 }
+@keyframes rotateTextIn {
+    0% {
+      opacity: 0;
+      transform: rotateX(90deg);
+    }
+    100% {
+      opacity: 0.75;
+      transform: rotateX(0deg);
+    }
+  }
+  
+  @keyframes rotateTextOut {
+    0% {
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+    100% {
+      opacity: 0;
+      transform: rotateX(90deg);
+    }
+  }
+  
+  .rotating-text-enter {
+    animation: rotateTextIn 2s ease-in-out forwards;
+  }
+  
+  .rotating-text-exit {
+    animation: rotateTextOut 2s ease-in-out forwards;
+  }
+  
