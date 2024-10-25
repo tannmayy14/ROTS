@@ -1,7 +1,7 @@
 export const bikes = [
     { 
         id: 1, 
-        name: 'Bike 1', 
+        name: 'Ducati V4 Panigale', 
         power: '30 kW', 
         torque: '25 Nm', 
         topSpeed: '120 km/h', 
@@ -14,7 +14,7 @@ export const bikes = [
     },
     { 
         id: 2, 
-        name: 'Bike 2', 
+        name: 'Kawasaki H2R Street Racer', 
         power: '35 kW', 
         torque: '28 Nm', 
         topSpeed: '130 km/h', 
@@ -27,7 +27,7 @@ export const bikes = [
     },
     { 
         id: 3, 
-        name: 'Bike 3', 
+        name: 'Kawasaki Ninja 600', 
         power: '40 kW', 
         torque: '30 Nm', 
         topSpeed: '140 km/h', 
@@ -40,7 +40,7 @@ export const bikes = [
     },
     { 
         id: 4, 
-        name: 'Bike 4', 
+        name: 'Kawasaki Z900', 
         power: '45 kW', 
         torque: '32 Nm', 
         topSpeed: '150 km/h', 
@@ -53,7 +53,7 @@ export const bikes = [
     },
     { 
         id: 5, 
-        name: 'Bike 5', 
+        name: 'Triumph Bonneville T100', 
         power: '50 kW', 
         torque: '35 Nm', 
         topSpeed: '160 km/h', 
@@ -66,7 +66,7 @@ export const bikes = [
     },
     { 
         id: 6, 
-        name: 'Bike 6', 
+        name: 'Triumph Truxton', 
         power: '55 kW', 
         torque: '40 Nm', 
         topSpeed: '170 km/h', 
@@ -79,7 +79,7 @@ export const bikes = [
     },
     { 
         id: 7, 
-        name: 'Bike 7', 
+        name: 'Harley Davidson FATBOY', 
         power: '60 kW', 
         torque: '45 Nm', 
         topSpeed: '180 km/h', 

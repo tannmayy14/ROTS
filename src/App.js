@@ -7,6 +7,8 @@ import Bikes from './components/Bikes';
 import Footer from './components/footer';
 import Signup from './authPages/SignUp';
 import SignIn from './authPages/SignIn';
+import Contact from './components/Contact';
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
           <Route path="/bikes" element={<Bikes />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/signin" element={<SignIn />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router> 

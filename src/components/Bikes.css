@@ -1,8 +1,14 @@
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
 .bike-card {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 10px 8px rgba(141, 16, 213, 0.1);
-    margin: 16px;
+    margin: 16px 0; /* Remove horizontal margin */
     padding: 16px;
     text-align: center;
     transition: transform 0.3s;
@@ -13,18 +19,16 @@
 }
 
 .bike-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
 }
 
-.bike-title {
-    font-size:1.5rem;
-    font-weight: bold;
-    color: #333;
-}
-
-.bike-details {
-    font-size: 1rem;
-    color: #666;
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

@@ -5,6 +5,8 @@ import { auth } from '../firebase/auth';  // Adjust path as per your folder stru
 import { Typography, TextField, Button, Box, Divider } from '@mui/material';
 import { styled } from '@mui/system';
 import GoogleIcon from '@mui/icons-material/Google';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './SignIn.css';
 
 const BackgroundContainer = styled(Box)({
@@ -91,14 +93,26 @@ function SignIn() {
 
     if (password !== confirmPassword) {
       setError("Passwords don't match");
+      toast.error("Passwords don't match", {
+        position: 'top-right',
+        autoClose: 3000,
+      });
       return;
     }
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
+        toast.success('Sign up successful!', {
+        position: "top-right",
+        autoClose: 3000, // Auto close after 3 seconds
+    });
       navigate('/');
     } catch (error) {
       setError(error.message);
+      toast.error(`Error: ${error.message}`, {
+        position: 'top-right',
+        autoClose: 3000,
+    });
     }
   };
 
@@ -106,9 +120,17 @@ function SignIn() {
     const provider = new GoogleAuthProvider();
     try {
       await signInWithPopup(auth, provider);
+      toast.success('Sign in with Google successful!', {
+        position: 'top-right',
+        autoClose: 3000,
+      });
       navigate('/');
     } catch (error) {
       setError(error.message);
+      toast.error(`Error: ${error.message}`, {
+        position: 'top-right',
+        autoClose: 3000,
+      });
     }
   };
 
@@ -116,7 +138,7 @@ function SignIn() {
     <BackgroundContainer>
       <StyledBox>
         <Typography variant="h4" component="h2" align="center" gutterBottom>
-          Sign In to FitLifeCo
+          Sign In to ROTS
         </Typography>
         <form onSubmit={handleSubmit}>
           <StyledTextField
@@ -157,6 +179,7 @@ function SignIn() {
             </StyledButton>
           </Box>
         </form>
+        <ToastContainer /> 
         <Divider sx={{ my: 2 }}>
           <Typography variant="body2" color="textSecondary">
             or

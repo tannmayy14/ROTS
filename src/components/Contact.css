@@ -1,0 +1,67 @@
+/* General wrapper styling to fill the entire viewport */
+.wrapper {
+    display: flex;
+    justify-content: center; /* Horizontally centers the container */
+    align-items: center;     /* Vertically centers the container */
+    height: 100vh;          /* Full height of the viewport */
+    background-color: #5c3b61; /* Optional: background for the full viewport */
+    padding: 200px; /* Optional: Add some padding around the content */
+    box-sizing: border-box; /* Ensure padding is included in height calculations */
+}
+
+/* General container styling */
+.contact-container {
+    width: 100%; /* Full width */
+    max-width: 800px; /* Limit maximum width */
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4d547d, #966c92); /* Gradient matching the purple and blue tones */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Info container */
+.contact-info {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background to match the subtle tone */
+    padding: 20px;
+    border-radius: 8px;
+    color: #e0e0e0; /* Light text color to stand out against the background */
+}
+
+/* Info item specific styling */
+.info-item {
+    margin-bottom: 15px;
+}
+
+.info-item h3 {
+    color: #d1c4e9; /* Softer lavender-like tone for sub-headings */
+}
+
+.info-item p {
+    color: #e0e0e0;
+}
+
+/* Button (if applicable in the future) */
+button {
+    padding: 10px 15px;
+    background-color: #3f51b5; /* Matching blue tone from the image */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #303f9f; /* Slightly darker shade for hover effect */
+}

@@ -1,121 +1,102 @@
 /* General page layout */
 .signup-container {
-    display: flex;
-    background-color: #0D0D0D;
-    height: 100vh;
-    color: #E0E0E0;
-  }
-  
-  .signup-left {
-    width: 50%;
-    position: relative;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #1C1C1C;
-  }
-  .image-container {
-    width: 80%;
-    height: 60%;
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(135deg, #9370DB 0%, #F8F8FF 100%); /* Purple-white gradient */
+  color: #333;
+  font-family: 'Lato', sans-serif;
+}
 
-  .signup-image {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .back-button {
-    background-color: #FF4500;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .back-button:hover {
-    background-color: #FFBF00;
-  }
-  
-  .signup-right {
-    width: 50%;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #252525;
-  }
-  
-  .signup-right h2 {
-    font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF;
-    margin-bottom: 20px;
-  }
-  
-  .signup-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .input-field {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #383838;
-    color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .input-field:focus {
-    box-shadow: 0 0 10px #FF4500;
-  }
-  
-  .textarea {
-    min-height: 100px;
-    resize: none;
-  }
-  
-  .signup-button {
-    background-color: #FF4500;
-    color: #FFFFFF;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .signup-button:hover {
-    background-color: #FFBF00;
-    transform: scale(1.05);
-  }
-  
-  .signup-form input[type="file"] {
-    border: 1px solid #FF4500;
-    background-color: #0D0D0D;
-  }
-  
-  .signup-left img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-  }
-  
-  .signup-left img:hover {
-    transform: scale(1.05);
-  }
-  
-  
+/* Left Image Section */
+.signup-left {
+  width: 40%; /* Reduce width */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #D8BFD8; /* Light purple background */
+}
+
+.signup-image {
+  max-width: 200%; 
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
+.back-button {
+  background-color: #9370DB;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #8A2BE2; /* Darker purple */
+}
+
+/* Right Form Section */
+.signup-right {
+  width: 60%; /* Increase width */
+  padding: 60px; /* More padding for comfort */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F8F8FF;
+}
+
+.signup-right h2 {
+  font-family: 'Oswald', sans-serif;
+  color: #333;
+  font-size: 2.2rem; /* Larger font size */
+  margin-bottom: 30px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input-field {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #E6E6FA; /* Light lavender input fields */
+  color: #333;
+  font-size: 1.1rem; /* Increase input font size */
+  font-family: 'Lato', sans-serif;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  box-shadow: 0 0 10px #9370DB; /* Purple shadow on focus */
+}
+
+.signup-button {
+  background-color: #9370DB;
+  color: #FFFFFF;
+  padding: 15px;
+  font-size: 1.2rem; /* Larger button font */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup-button:hover {
+  background-color: #8A2BE2;
+  transform: scale(1.05);
+}
+
+.signup-form input[type="file"] {
+  border: 1px solid #9370DB;
+  background-color: #E6E6FA;
+}
+
