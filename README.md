@@ -1,6 +1,5 @@
 
 This project was bootstrapped with Create React App & Material UI of google
-FOR FIREBASE KEYS MAIL ME :> tanmaybhatkar12@gmail.com
 
 ## Available Scripts
 
