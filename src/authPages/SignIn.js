@@ -12,13 +12,15 @@ import './SignIn.css';
 const BackgroundContainer = styled(Box)({
   position: 'relative',
   width: '100vw',
-  height: '100vh',
+  minheight: '100vh',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   backgroundImage: 'url(./src/assets/signInBack.jpg)',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
+  overflowX: 'hidden',
+  padding: '1rem',
   '&::before': {
     content: '""',
     position: 'absolute',
