@@ -87,11 +87,14 @@ function SignIn() {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
+      setLoading(true);
 
     if (password !== confirmPassword) {
       setError("Passwords don't match");
@@ -116,10 +119,14 @@ function SignIn() {
         autoClose: 3000,
     });
     }
+    finally {
+    setLoading(false); //  Stop loading
+  }
   };
 
   const handleGoogleSignIn = async () => {
     const provider = new GoogleAuthProvider();
+    setLoading(true);
     try {
       await signInWithPopup(auth, provider);
       toast.success('Sign in with Google successful!', {
@@ -134,6 +141,9 @@ function SignIn() {
         autoClose: 3000,
       });
     }
+    finally {
+    setLoading(false); // Stop loading
+  }
   };
 
   return (
